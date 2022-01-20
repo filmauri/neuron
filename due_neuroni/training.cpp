@@ -21,7 +21,7 @@ int main ()
       ChangeParameters (NN, data[i], t);
       err += error (NN, data[i]) / data.size();
     }
-    cout << "err_medio = " << err << endl;
+    //cout << "err_medio = " << err << endl;
 
     if (oldErr < err)
       t /= 2;
