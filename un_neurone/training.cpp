@@ -21,7 +21,7 @@ int main ()
       err += error (N0, data[i]) / data.size(); 
 
     }
-    cout << "err_medio = " << err << endl;
+   //cout << "err_medio = " << err << endl;
     if (oldErr < err)
       t /= 2;
 
@@ -29,7 +29,7 @@ int main ()
     err = 0;
   }
 
-  cout << "\nb0 = " << N0.get_b() << endl;
+  cout << "b0 = " << N0.get_b() << endl;
   cout << "W0x = " << N0.get_Wx() << endl; 
   cout << "W0y = " << N0.get_Wy() << endl; 
 
