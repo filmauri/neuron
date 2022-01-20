@@ -18,7 +18,7 @@ int main ()
     if ((data[i].get_Y0() == 1 && N.output(data[i].get_x(), data[i].get_y()) > 0.5 ) || (data[i].get_Y0() == 0 && N.output(data[i].get_x(), data[i].get_y()) < 0.5))
       count++;
     
-    cout << data[i].get_Y0() << " " << data[i].get_Y1() << (N.output(data[i].get_x(), data[i].get_y()) > 0.5 ? " 0 1" : " 1 0") << endl;
+    fout << data[i].get_Y0() << " " << data[i].get_Y1() << (N.output(data[i].get_x(), data[i].get_y()) > 0.5 ? " 0 1" : " 1 0") << endl;
   }
 
   cout << "efficienza: " << static_cast<double>(count) / static_cast<double>(data.size()) * 100. << "% " << endl;
